@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Footer, Navbar } from "./components";
+import { Alert, Footer, Navbar } from "./components";
 import { AlertProvider } from "./context/alert/AlertContext";
 import { GithubProvider } from "./context/github/GithubContext";
 import { About, Home, NotFound } from "./pages";
@@ -12,6 +12,7 @@ function App() {
           <div className="flex flex-col justify-between h-screen">
             <Navbar />
             <main className="container mx-auto px-3 pb-12">
+              <Alert />
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
