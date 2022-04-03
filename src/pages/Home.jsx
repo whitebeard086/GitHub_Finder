@@ -1,10 +1,11 @@
-import { UserResults } from "../components"
+import { UserResults, UserSearch } from "../components";
 
 const Home = () => {
   return (
     <>
-        <UserResults />
+      <UserSearch />
+      <UserResults />
     </>
-  )
-}
-export default Home
+  );
+};
+export default Home;
